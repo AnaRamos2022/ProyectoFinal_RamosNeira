@@ -1,0 +1,23 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block principal %}
+
+<ul>
+    <li> 
+        Código: {{paciente.id}}
+    </li>
+    <li> 
+        Nombres: {{ paciente.nombre }}
+    </li>
+    <li> 
+        Apellidos: {{ paciente.apellido }}
+    </li>
+    <li> 
+        Email: {{ paciente.email }}
+    </li>
+    <li> 
+        Imagen: <p><img height="256px" src="{{paciente.image_url}}"></p>
+    </li>
+</ul> 
+<a class="btn btn-primary" href="{% url 'paciente-list' %}">Regresar</a>
+{% endblock %}

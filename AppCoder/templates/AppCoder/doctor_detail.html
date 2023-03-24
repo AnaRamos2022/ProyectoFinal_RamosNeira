@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block principal %}
+
+<ul>
+    <li> 
+        Código: {{doctor.id}}
+    </li>
+    <li> 
+        Especialidad: {{ doctor.especialidad }}
+    </li>
+    <li> 
+        Nombres: {{ doctor.nombre }}
+    </li>
+    <li> 
+        Apellidos: {{ doctor.apellido }}
+    </li>
+    <li> 
+        Email: {{ doctor.email }}
+    </li>
+    <li> 
+        Imagen: <p><img height="256px" src="{{doctor.image_url}}"></p>
+    </li>
+</ul> 
+<a class="btn btn-primary" href="{% url 'doctor-list' %}">Regresar</a>
+{% endblock %}
