@@ -30,5 +30,7 @@ Proyecto Final Python - Web Django Sistema de Gestión Hospitalaria - Ramos Neir
     - Opción Salir. Se mostrará el nombre del usuario autenticado, al dar clic se cerrará la sesión.
         
 
+#Video Demo:
+https://drive.google.com/drive/folders/17XnsAzE4oQg7o4E2QPBFUbcw5XMAwdDn?usp=sharing
 
 
